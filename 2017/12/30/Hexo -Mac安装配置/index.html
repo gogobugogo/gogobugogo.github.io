@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="GoGo Blog">
 <meta property="og:description" content="心血来潮想要写博客，记录、总结一下自己学习过程中遇到的问题，也方便自己后面查阅和复习。现在流行的一些博客网站不够简洁，广告也多，最终决定用Hexo + 模板搭建个人博客，部署在Github。 安装Node.js[Node.js官网][https://nodejs.org/en/]下载安装最新版本的Node.js。 下载pkg版本，直接点击安装。安装完成后，在terminal中输入npm -v和n">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-25T14:59:32.763Z">
+<meta property="og:updated_time" content="2018-05-25T16:21:49.777Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo - Mac安装配置">
 <meta name="twitter:description" content="心血来潮想要写博客，记录、总结一下自己学习过程中遇到的问题，也方便自己后面查阅和复习。现在流行的一些博客网站不够简洁，广告也多，最终决定用Hexo + 模板搭建个人博客，部署在Github。 安装Node.js[Node.js官网][https://nodejs.org/en/]下载安装最新版本的Node.js。 下载pkg版本，直接点击安装。安装完成后，在terminal中输入npm -v和n">
@@ -372,6 +372,62 @@
 <p>theme： next</p>
 </blockquote>
 <p>重新发布后，博客即使用Next主题。</p>
+<h4 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h4><p>添加标签选项：</p>
+<blockquote>
+<p>hexo new page tags</p>
+</blockquote>
+<p>编辑/source/[标签目录名]/index.md :</p>
+<blockquote>
+<p>title: tags</p>
+<p>date: 2018-05-06 23:16:00</p>
+<p>type: “tags”</p>
+</blockquote>
+<p>编辑主题配置文件：</p>
+<blockquote>
+<p>menu：</p>
+<p>​    home: / || home</p>
+<p>​    tags: /tags/ || tags</p>
+<p>​    categories: /categories/ || th</p>
+</blockquote>
+<p>编辑hexo配置文件：</p>
+<blockquote>
+<p># Directory</p>
+<p>tag_dir: tags</p>
+</blockquote>
+<p>文章关联标签：</p>
+<blockquote>
+<p>title: 文章标题</p>
+<p>date: 2018-05-06</p>
+<p>tags: [tag name]</p>
+</blockquote>
+<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><p>添加分类选项：</p>
+<blockquote>
+<p>hexo new page categories</p>
+</blockquote>
+<p>编辑/source/[分类目录名]/index.md:</p>
+<blockquote>
+<p>title: categories</p>
+<p>date: 2018-05-06 23:45:00</p>
+<p>type: “categories”</p>
+</blockquote>
+<p>编辑主题配置文件：</p>
+<blockquote>
+<p>menu：</p>
+<p>​    home: / || home</p>
+<p>​    tags: /tags/ || tags</p>
+<p>​    categories: /categories/ || th</p>
+</blockquote>
+<p>编辑hexo配置文件：</p>
+<blockquote>
+<p># Directory</p>
+<p>category_dir: categories</p>
+</blockquote>
+<p>文章关联标签：</p>
+<blockquote>
+<p>title: 文章标题</p>
+<p>date: 2018-05-06</p>
+<p>categories: [category name]</p>
+</blockquote>
 <h4 id="博客文章"><a href="#博客文章" class="headerlink" title="博客文章"></a>博客文章</h4><p>使用Markdown编写的博客文章放在hexo/source/_posts目录下。文章开头指定文章标题、日期、分类和标签。</p>
 <blockquote>
 <p>title: Hexo - Mac安装配置<br>date: 2018-12-30<br>categories: 工具<br>tags: [Blog]</p>
@@ -554,7 +610,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Git"><span class="nav-number">2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Hexo"><span class="nav-number">4.</span> <span class="nav-text">配置Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布文章"><span class="nav-number">5.</span> <span class="nav-text">发布文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#博客主题"><span class="nav-number">6.</span> <span class="nav-text">博客主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#博客文章"><span class="nav-number">7.</span> <span class="nav-text">博客文章</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Node-js"><span class="nav-number">1.</span> <span class="nav-text">安装Node.js</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Git"><span class="nav-number">2.</span> <span class="nav-text">安装Git</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装Hexo"><span class="nav-number">3.</span> <span class="nav-text">安装Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#配置Hexo"><span class="nav-number">4.</span> <span class="nav-text">配置Hexo</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#发布文章"><span class="nav-number">5.</span> <span class="nav-text">发布文章</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#博客主题"><span class="nav-number">6.</span> <span class="nav-text">博客主题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#标签"><span class="nav-number">7.</span> <span class="nav-text">标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#分类"><span class="nav-number">8.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#博客文章"><span class="nav-number">9.</span> <span class="nav-text">博客文章</span></a></li></ol></div>
             
 
           </div>
